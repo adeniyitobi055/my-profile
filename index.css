@@ -89,8 +89,8 @@ section:nth-child(odd) {
 }
 
 section .animate {
-  transition: 1s;
-  filter: blur(4px);
+  transition: 1.2s;
+  filter: blur(5px);
   opacity: 0;
 }
 
@@ -568,11 +568,11 @@ section.show-animate .animate {
 } */
 
 .skills-section .animate {
-  transform: translateX(-100%);
+  transform: scaleX(1.5);
 }
 
 .skills-section.show-animate .animate {
-  transform: translateX(0);
+  transform: scaleX(1);
 }
 
 /* Portfolio Section */
