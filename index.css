@@ -755,7 +755,9 @@ header nav .fa-solid {
     /* align-items: flex-start; */
     /* padding-top: 60px; */
     background-attachment: fixed;
+    background-size: cover;
     /* margin-top: 5rem; */
+    display: block;
   }
   .hero-section .profile-container {
     align-items: flex-start;
@@ -764,17 +766,17 @@ header nav .fa-solid {
   }
 
   .profile-container .container {
-    width: 300px;
+    width: 400px;
     padding-bottom: 0;
   }
 
   .container .p-1 {
     font-size: 18px;
-    margin-top: 70%;
+    margin-bottom: 15px;
   }
 
   .container .p-2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .container .p-2 span {
