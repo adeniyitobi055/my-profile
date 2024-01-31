@@ -6,72 +6,50 @@
     <title>Oluwatobi Adeniyi's Profile</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
     <script defer type="text/javascript" src="script.js"></script>
-    <!-- <link rel="icon" src="" /> -->
+    <link rel="shortcut icon" type="icon" href="images/logo/main_image.png" />
     <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script
+      src="https://kit.fontawesome.com/9904f6880b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Header -->
     <header>
-      <a href="#" class="logo">TOBI</a>
+      <a href="#" class="logo"
+        ><img src="images/logo/favicon_1.ico" alt="logo-image"
+      /></a>
 
       <nav>
-        <ul>
-          <li>
-            <a href="#home" class="active">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#experience">Experience</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#portfolio">Portfolio</a>
-          </li>
+        <ul id="sidemenu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
     </header>
     <!-- Hero -->
     <section id="home" class="hero-section show-animate">
       <div class="profile-container">
         <div class="profile-image">
-          <img
+          <!-- <img
             class="animate"
             src="images/profile/profile-image-1.jpg"
             alt="profile-image"
-          />
+          /> -->
         </div>
         <div class="container">
-          <p class="p-2 animate">Oluwatobi Adeniyi</p>
-          <p class="p-3 animate">adedejiadeniyi055@gmail.com</p>
-          <div class="media-handles animate">
-            <a
-              href="https://web.facebook.com/oluwatobi.adeniyi.967"
-              class="fa fa-facebook"
-              target="_blank"
-            ></a>
-            <a
-              href="https://twitter.com/tobi_deji99"
-              class="fa fa-twitter"
-              target="_blank"
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/oluwatobi-adedeji-adeniyi"
-              class="fa fa-linkedin"
-              target="_blank"
-            ></a>
-            <a
-              href="https://github.com/adeniyitobi055"
-              class="fa fa-github"
-              target="_blank"
-            ></a>
-          </div>
+          <p class="p-1 animate">Software Engineer</p>
+          <h2 class="p-2 animate">
+            Hi, I'm <span>Tobi</span> <br />Adeniyi From Nigeria
+          </h2>
         </div>
       </div>
     </section>
@@ -87,316 +65,271 @@
               alt="about-image"
             />
           </div>
-          <div class="about-desc">
-            <p class="animate">Hi there 👋,</p>
-            <p class="animate">
-              My name is Oluwatobi Adeniyi, I am a software engineer with a
-              strong penchant for front-end development and expertise in
-              JavaScript (React), React Query, Tailwind CSS, HTML/CSS, and some
-              server-side technologies like python and MySQL. With close to 2
-              years of experience in the software development industry, I have a
-              proven track record of designing and implementing complex systems
-              that meet business requirements and exceed user expectations.
+          <div class="about-desc animate">
+            <p>Hi there 👋,</p>
+            <p class="description">
+              I'm Oluwatobi Adeniyi, I am a software engineer with a strong
+              penchant for front-end development. With close to 2 years of
+              experience in the software development industry, designed and
+              implemented complex systems that meet business requirements and
+              exceed user expectations.
             </p>
-            <p class="animate">
-              My experience in the above languages allows me to work with a
-              variety of technologies and systems to make awesome, deployable
-              products. I enjoy collaborating with cross-functional teams to
-              build high-quality software solutions.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- My Experience -->
-    <section id="experience" class="experience-section">
-      <div class="experience-container">
-        <h2 class="animate">my experience</h2>
-        <div class="experiences">
-          <div class="experience-desc-container">
-            <div class="experience-1">
-              <a href="https://euroscholars.pl/" target="_blank">
-                <img
-                  class="animate"
-                  src="images/profile/euro-scholars-logo.png"
-                  alt="euro scholars poland"
-                />
-              </a>
-            </div>
-            <div class="experience-1-desc">
-              <p class="animate">
-                Position: Technical Support || Youth Corper || November 2021 to
-                March 2022
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
               </p>
-              <p class="animate">Key Responsibilities:</p>
-              <ul class="animate">
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('certification')">
+                Certification
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
                 <li>
-                  Maintain the systems of offices in Africa by making sure their
-                  OS are up-to-date.
+                  <span>Software Development</span><br />Develop scalable
+                  softwares
                 </li>
-                <li>Assist clients in application for visa.</li>
                 <li>
-                  Design banners and templates for advertisement and
-                  publications.
+                  <span>HTML || CSS || TailwindCSS</span><br />Create & Design
+                  responsive web pages
                 </li>
                 <li>
-                  Advise students interested in tech careers on which field to
-                  specialize and the best countries to study them.
+                  <span>JavaScript(React)</span><br />Develop & Design complex
+                  Web applications
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Nov 2021 - Mar 2022</span><br />Technical Support at
+                  Euro Scholars Poland
+                  <a href="https://euroscholars.pl/" target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+                <li>
+                  <span>Feb 2019 - Sep 2019</span><br />Intern at First Bank of
+                  Nigeria LTD
+                  <a
+                    href="https://www.firstbanknigeria.com/home/"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Nov 30, 2023</span><br />Software Engineering from
+                  Holberton School
+                  <a
+                    href="https://intranet.alxswe.com/certificates/8EenrpS3NX"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+                <li>
+                  <span>July 19, 2020</span><br />B.Sc from Adeleke University
+                  <a
+                    href="https://drive.google.com/file/d/1ePF0-u4_QKyYwsf8UF41Yv61x0HkS9OF/view?usp=drive_link"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="certification">
+              <ul>
+                <li>
+                  <span>Aug 2, 2023</span><br />Responsive Web Design
+                  <a
+                    href="https://www.freecodecamp.org/certification/Adeniyi_Tobi/responsive-web-design"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </li>
+                <li>
+                  <span>Sep 15, 2023</span><br />Front End Development Libraries
+                  <a
+                    href="https://www.freecodecamp.org/certification/Adeniyi_Tobi/front-end-development-libraries"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="experience-desc-container">
-            <div class="experience-2">
-              <a href="https://www.firstbanknigeria.com/home/" target="_blank">
-                <img
-                  class="animate"
-                  src="images/profile/firstbank-logo.png"
-                  alt="firstbank-logo"
-                />
-              </a>
-            </div>
-            <div class="experience-2-desc">
-              <p class="animate">
-                Position: Intern - Operational Risk Management Department ||
-                February 2019 to September 2019
-              </p>
-              <p class="animate">Major Achievements:</p>
-              <ul class="animate">
-                <li>
-                  Awareness of staff on information and cyber security in
-                  preparation for the ISO 270001 certification.
-                </li>
-                <li>
-                  Identified and collated the operational risk of departments in
-                  the bank and how to mitigate them.
-                </li>
-                <li>
-                  Maintained the department's gardgets and setting up of meeting
-                  rooms.
-                </li>
-              </ul>
-            </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+      <div class="services-container">
+        <h2 class="animate">My Services</h2>
+        <div class="services-list animate">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h3>Website Development</h3>
+            <p>
+              Design and develop responsive and visually appealing websites.
+              Ensuring cross-browser compatibility and optimizing performance.
+            </p>
+            <a
+              href="https://brainstation.io/career-guides/what-is-web-development"
+              target="_blank"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h3>Web Application Design</h3>
+            <p>
+              Build interactive, dynamic web applications using JavaScript
+              framework (React) and implement user interfaces for complex
+              functionalities.
+            </p>
+            <a href="https://www.hotjar.com/web-app-design/" target="_blank"
+              >Learn more</a
+            >
           </div>
         </div>
       </div>
     </section>
-    <!-- My Skills-->
-    <section id="skills" class="skills-section">
-      <div class="skills-container">
-        <h2 class="animate">my skills</h2>
-        <p class="animate">
-          The skills below are specifically outlined to give an idea of my
-          specilization.
-        </p>
-        <div class="skill-name">
-          <div class="skill animate">
-            <img src="images/skills/html-icon.png" alt="html-icon" />
-            <p>HTML</p>
-            <p>
-              With over 4 years of experience, I have designed various web
-              pages.
-            </p>
-          </div>
-          <div class="skill animate">
-            <img src="images/skills/css-icon.png" alt="css-icon" />
-            <p>CSS</p>
-            <p>
-              With over 4 years of experience, I have designed responsive web
-              applications.
-            </p>
-          </div>
-          <div class="skill animate">
-            <img src="images/skills/javascript-icon.png" alt="js-icon" />
-            <p>JavaScript</p>
-            <p>
-              With more than 2 years of experience, I have designed
-              applications.
-            </p>
-          </div>
-          <div class="skill animate">
-            <img src="images/skills/react-icon.png" alt="react-icon" />
-            <p>React</p>
-            <p>
-              With more than a year experience, I have designed scalable
-              platforms.
-            </p>
-          </div>
-          <div class="skill animate">
-            <img
-              src="images/skills/react-query-icon.png"
-              alt="react_query-icon"
-            />
-            <p>React Query</p>
-            <p>
-              I have been able to put to good use this third-party library for
-              state management.
-            </p>
-          </div>
-          <div class="skill animate">
-            <img " src="images/skills/tailwindCSS-icon.png"
-            alt="tailwindcss-icon" />
-            <p>Tailwind CSS</p>
-            <p>
-              I have been able to put to good use this library to design various
-              platforms.
-            </p>
-          </div>
-        </div>
-        <h3 class="animate">Other skills</h3>
-        <ul class="animate">
-          <li>Software development</li>
-          <li>Software quality</li>
-          <li>Web development</li>
-          <li>Effective communication</li>
-          <li>Bootstrap</li>
-          <li>Technical writing</li>
-          <li>Team work</li>
-          <li>SCSS/SASS</li>
-          <li>JQuery</li>
-        </ul>
-      </div>
-    </section>
+    <!-- Portfolio section -->
     <section id="portfolio" class="portfolio-section">
       <div class="portfolio-container">
-        <h2 class="animate">portfolio</h2>
-        <p class="animate">Showcases my projects and certifications</p>
-        <div class="projects">
-          <div class="project-container">
-            <div class="project-name">
+        <h2 class="animate">my work</h2>
+        <!-- <p>My work and certifications</p> -->
+        <div class="work-container">
+          <div class="work-list animate">
+            <div class="work">
               <img
-                class="animate"
                 src="images/projects/the-wild-oasis.png"
                 alt="the-wild-oasis"
               />
-              <a
-                href="https://the-wild-oasis-alpha-eight.vercel.app/"
-                target="_blank"
-              >
-                <div class="content">
-                  <h3>The Wild Oasis Hotel</h3>
-                  <p>
-                    Designed for internal use only to check in/out clients
-                    amongst other activities to simplify and enhance customer
-                    service.
-                  </p>
-                </div>
-              </a>
+              <div class="layer">
+                <h3>The Wild Oasis Hotel App</h3>
+                <p>
+                  The application, designed for internal use only checks in/out
+                  clients amongst other activities to simplify and enhance
+                  customer service.
+                </p>
+                <a
+                  href="https://the-wild-oasis-alpha-eight.vercel.app/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
             </div>
-            <div class="project-name">
-              <img
-                class="animate"
-                src="images/projects/travel-list.png"
-                alt="atomic-blog"
-              />
-              <a
-                href="https://travel-list-chi-lilac.vercel.app/"
-                target="_blank"
-              >
-                <div class="content">
-                  <h3>Travel List</h3>
-                  <p>
-                    Keeps track of travel items with statistics to ensure that
-                    nothing is forgotten while packing.
-                  </p>
-                </div>
-              </a>
+            <div class="work">
+              <img src="images/projects/travel-list.png" alt="atomic-blog" />
+
+              <div class="layer">
+                <h3>Travel List App</h3>
+                <p>
+                  This applications keeps track of travel items needed for a
+                  trip, with statistics to ensure that nothing is forgotten
+                  while packing.
+                </p>
+                <a
+                  href="https://travel-list-chi-lilac.vercel.app/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
             </div>
-            <div class="project-name">
+            <div class="work centered-item">
               <img
-                class="animate"
                 src="images/projects/fast-react-pizza.png"
                 alt="fast-react-pizza"
               />
-              <a href="https://fast-react-pizza-nu.vercel.app/" target="_blank">
-                <div class="content">
-                  <h3>Fast React Pizza</h3>
-                  <p>
-                    A bespoke application for a pizza restaurant to allow users
-                    order the pizza of their choice and getting it delivered to
-                    them.
-                  </p>
-                </div>
-              </a>
+
+              <div class="layer">
+                <h3>Fast React Pizza App</h3>
+                <p>
+                  This bespoke application allows users to order the pizza of
+                  their choice from a restaurant and get it delivered to them.
+                </p>
+                <a
+                  href="https://fast-react-pizza-nu.vercel.app/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
             </div>
+          </div>
+          <a
+            href="https://atomic-blog-xi.vercel.app/"
+            target="_blank"
+            class="btn"
+            >See more</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Contact section -->
+    <section class="contact-section" id="contact">
+      <div class="contact-container animate">
+        <h2 class="sub-title">Contact Me</h2>
+        <div class="row">
+          <div class="contact-left">
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              adedejiadeniyi055@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> (+234) 8137084862</p>
+            <div class="social-icons">
+              <a
+                href="https://web.facebook.com/oluwatobi.adeniyi.967"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/tobi_deji99" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/oluwatobi-adedeji-adeniyi"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/adeniyitobi055" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="images/Oluwatobi Adeniyi.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button id="submitBtn" type="submit" class="btn btn2">
+                Submit
+              </button>
+            </form>
+            <span id="msg"></span>
           </div>
         </div>
-        <div class="certification">
-          <div class="certificate-container" onclick="toggleImage(this)">
-            <img
-              class="animate"
-              src="images/certificates/alx-certificate-oluwatobi-adeniyi.png"
-              alt="alx certificate"
-            />
-            <div class="expanded-img">
-              <img
-                src="images/certificates/alx-certificate-oluwatobi-adeniyi.png"
-                alt="alx certificate"
-              />
-            </div>
-            <p class="animate">
-              Software Engineering - Specialized in Front End
-            </p>
-          </div>
-          <div class="certificate-container" onclick="toggleImage(this)">
-            <img
-              class="animate"
-              src="images/certificates/Front End Development Librabries.png"
-              alt="front-end certificate"
-            />
-            <div class="expanded-img">
-              <img
-                src="images/certificates/Front End Development Librabries.png"
-                alt="front-end certificate"
-              />
-            </div>
-            <p class="animate">Front End Development Librabries</p>
-          </div>
-          <div class="certificate-container" onclick="toggleImage(this)">
-            <img
-              class="animate"
-              src="images/certificates/JavaScript-Algorithms-and-Data-Structures.png"
-              alt="js algorithm certificate"
-            />
-            <div class="expanded-img">
-              <img
-                src="images/certificates/JavaScript-Algorithms-and-Data-Structures.png"
-                alt="js algorithm certificate"
-              />
-            </div>
-            <p class="animate">
-              JavaScript JavaScript Algorithms and Data Structures
-            </p>
-          </div>
-          <div class="certificate-container" onclick="toggleImage(this)">
-            <img
-              class="animate"
-              src="images/certificates/Responsive-web-design-certificate.png"
-              alt="responsive design certificate"
-            />
-            <div class="expanded-img">
-              <img
-                src="images/certificates/Responsive-web-design-certificate.png"
-                alt="responsive design certificate"
-              />
-            </div>
-            <p class="animate">Responsive Web Design</p>
-          </div>
-          <div class="certificate-container" onclick="toggleImage(this)">
-            <img
-              class="animate"
-              src="images/certificates/javascript certificate.png"
-              alt="js intro"
-            />
-            <div class="expanded-img">
-              <img
-                src="images/certificates/javascript certificate.png"
-                alt="js intro"
-              />
-            </div>
-            <p class="animate">Introduction to JavaScript</p>
-          </div>
-        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>Copyright Tobi &copy; 2024 Reserved, Template by Tobi</p>
       </div>
     </section>
   </body>
