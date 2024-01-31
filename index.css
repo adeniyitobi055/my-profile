@@ -503,9 +503,9 @@ section.show-animate .animate {
   /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  grid-gap: 30px;
+  grid-gap: 35px;
   margin-top: 50px;
-  width: 70%;
+  width: 80%;
   padding: 0 20px;
   text-align: center;
 }
@@ -515,7 +515,7 @@ section.show-animate .animate {
   grid-column: span 2;
   width: 100%;
   margin: 0 auto;
-  max-width: 430px;
+  max-width: 500px;
 }
 
 .work {
