@@ -132,42 +132,39 @@ section.show-animate .animate {
   flex-direction: column;
   color: white;
   justify-content: center;
-  align-items: flex-start;
-  /* margin-top: 75px; */
-  /* height: 100vh; */
-  z-index: 500;
-  /* background-image: linear-gradient(
-      rgba(25, 25, 30, 0.2),
-      rgba(19, 18, 18, 0.2)
-    ),
-    url("images/profile/background.png"); */
-  background-image: url(images/profile/fresh_design_background.png);
-  /* background-image: url(images/profile/editedprofilebackground.png); */
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
-.profile-image img {
-  display: none;
+  align-items: center;
 }
 
 .hero-section .profile-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  margin: 5rem;
-  margin-left: 10rem;
+  margin: 10rem 5rem 8rem;
 }
 
 .profile-container .container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
   gap: 0;
+  width: 100%;
+  /* height: auto; */
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 120%;
+  height: 100%;
+}
+
+.image img {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -190,10 +187,11 @@ section.show-animate .animate {
 
 .container .p-2 {
   font-size: 60px;
-  margin: 2px 0;
+  margin: 1px 0;
   /* padding-bottom: 5px; */
   font-weight: 700;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .container .p-2 span {
@@ -500,7 +498,7 @@ section.show-animate .animate {
   grid-template-rows: auto auto;
   grid-gap: 35px;
   margin-top: 50px;
-  width: 80%;
+  width: 70%;
   padding: 0 20px;
   text-align: center;
 }
@@ -510,7 +508,7 @@ section.show-animate .animate {
   grid-column: span 2;
   width: 100%;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 .work {
@@ -733,7 +731,6 @@ header nav .fa-solid {
 @media only screen and (max-width: 600px) {
   header {
     padding: 10px;
-    /* background: linear-gradient(rgba(25, 25, 30, 1), rgba(19, 18, 18, 1)); */
     background: #000000;
   }
 
@@ -747,7 +744,7 @@ header nav .fa-solid {
     text-align: center;
   }
 
-  .profile-image {
+  .image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -755,7 +752,7 @@ header nav .fa-solid {
     width: 400%;
   }
 
-  .profile-image img {
+  .image img {
     display: block;
     width: 100%;
   }
@@ -764,7 +761,7 @@ header nav .fa-solid {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 45px 0;
+    margin: 10rem 0;
     padding: 0;
   }
 
