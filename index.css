@@ -751,9 +751,11 @@ header nav .fa-solid {
         rgba(25, 25, 30, 0.2),
         rgba(19, 18, 18, 0.2)
       ),
-      url("images/profile/new_design_2.png");
-    align-items: flex-start;
+      url("images/profile/phone_bg_new.png");
+    /* align-items: flex-start; */
     /* padding-top: 60px; */
+    background-attachment: fixed;
+    /* margin-top: 5rem; */
   }
   .hero-section .profile-container {
     align-items: flex-start;
