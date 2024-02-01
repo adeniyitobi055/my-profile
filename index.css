@@ -326,7 +326,7 @@ section.show-animate .animate {
 
 .tab-contents ul {
   padding: 0;
-  height: 200px;
+  height: 250px;
 }
 
 .tab-contents ul li {
@@ -905,7 +905,7 @@ header nav .fa-solid {
   }
 
   .tab-contents ul {
-    height: 170px;
+    height: 250px;
   }
 
   .services-section {
